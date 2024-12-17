@@ -23011,4 +23011,10 @@ let data = [
 ];
 //1 print each card where the series set is "Diamond & Pearl"
 
+const pokemon = data.filter((poke) => poke.set.series === "Diamond & Pearl");
+console.log(pokemon);
+
 //2 print each card name where the card type "includes" Water
+
+const water = data.filter((wpoke) => wpoke.types === "Water");
+console.log(water);
