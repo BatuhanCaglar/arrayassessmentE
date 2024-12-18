@@ -23016,5 +23016,9 @@ console.log(pokemon);
 
 //2 print each card name where the card type "includes" Water
 
-const water = data.filter((wpoke) => wpoke.types === "Water");
-console.log(water);
+function waterpoke(data) {
+  const waterPokemons = data.filter((wpoke) => wpoke.types.includes("Water"));
+  console.log(waterPokemons);
+}
+
+waterpoke(data);
